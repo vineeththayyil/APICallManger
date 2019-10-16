@@ -22,7 +22,7 @@ public class APIManager: NSObject {
     public func createViewController() -> SecondViewController {
         
         let storyBoard = UIStoryboard(name: "Main", bundle:nil) as! UIStoryboard
-        let VC = storyBoard.instantiateViewController(withIdentifier:"SecondViewController") as! SecondViewController
+        let VC = storyBoard.instantiateViewController(withIdentifier:"ViewController") as! SecondViewController
         print(VC)
         return VC
     }
