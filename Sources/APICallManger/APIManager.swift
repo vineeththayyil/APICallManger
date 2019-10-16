@@ -14,4 +14,8 @@ class APIManager: NSObject {
     func chackName() {
         
     }
+    
+    func displayName() {
+        
+    }
 }
