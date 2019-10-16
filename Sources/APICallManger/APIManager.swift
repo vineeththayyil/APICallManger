@@ -8,7 +8,7 @@
 
 import UIKit
 
-class APIManager: NSObject {
+public class APIManager: NSObject {
 
     
     func chackName() {
