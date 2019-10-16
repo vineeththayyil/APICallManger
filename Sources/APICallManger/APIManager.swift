@@ -19,10 +19,11 @@ class APIManager: NSObject {
         
     }
     
-    func createViewController() {
+    func createViewController() -> ViewController {
         
         let storyBoard = UIStoryboard(name: "Main", bundle:nil) as! UIStoryboard
-        let VC = storyBoard.instantiateViewController(withIdentifier:"ViewController")
+        let VC = storyBoard.instantiateViewController(withIdentifier:"ViewController") as! ViewController
         print(VC)
+        return VC
     }
 }
