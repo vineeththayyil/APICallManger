@@ -22,7 +22,7 @@ public class APIManager: NSObject {
     public func createViewController() -> TestViewController {
         // let storyBoard = UIStoryboard.init(name: "Main", bundle:nil)
 
-        let VC = TestViewController.init(nibName: nil, bundle: nil)
+        let VC = TestViewController.init(nibName: "TestViewController", bundle: nil)
         print(VC)
         return VC
     }
