@@ -19,11 +19,10 @@ public class APIManager: NSObject {
         
     }
     
-    public func createViewController() -> SecondViewController {
-         let storyBoard = UIStoryboard.init(name: "MainClass", bundle: Bundle.init(path: "StoryBoardBundle"))
+    public func createViewController() -> TestViewController {
+        // let storyBoard = UIStoryboard.init(name: "Main", bundle:nil)
 
-     //   let storyBoard = UIStoryboard(name: "Main", bundle:nil) as! UIStoryboard
-        let VC = storyBoard.instantiateViewController(withIdentifier:"ViewController") as! SecondViewController
+        let VC = TestViewController.init(nibName: nil, bundle: nil)
         print(VC)
         return VC
     }
